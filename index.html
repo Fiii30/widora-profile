@@ -15,13 +15,17 @@
                 <a href="">widora</a>
             </div>
             
-            <ul class="nav-option">
+            <ul class="nav-option" id="nav-option">
                 <li><a href="#page-intro">Dashboard</a></li>
                 <li><a href="#page-projects">Projects</a></li>
                 <li><a href="#page-skills">Skills</a></li>
                 <li><a href="#page-contact">Contact</a></li>
                 <button>Download CV</button>
             </ul>
+
+            <button class="hamburger" id="hamburger">
+                <i class="bi bi-list"></i>
+            </button>
         </div>
 
         <div class="introduction" id="page-intro">
@@ -92,6 +96,7 @@
                         <h5 class="card-title">History Ride</h5>
                         <p class="card-text">Menampilkan riwayat lokasi yang telah dilalui atau dituju oleh komunitas win00 di seluruh INDONESIA</p>
                         <div class="card-tech">
+                            <span>HTML</span>
                             <span>CSS</span>
                             <span>TypeScript</span>
                             <span>JavaScript</span>
@@ -159,7 +164,7 @@
                 </p>
             </div>
             <div class="contact">
-                <div class="left-side">
+                <div class="text-contact">
                     <div class="text-suggest">
                         <p> Punya project, pekerjaan, collaboration atau sekadar ingin berdiskusi?</p>
                         <p> Kirim pesan melalui form di samping. Saya akan membaca pesan kamu dan menghubungi kembali.</p>
@@ -180,24 +185,24 @@
                     </div>
                 </div>
                 <div class="form-email">
-                    <form action="">
-                        <label for="">Your Name</label>
-                        <input type="text" placeholder="Jhon Son" required>
+                    <form action="" id="MessageForm">
+                        <label for="MessengerName">Your Name</label>
+                        <input type="text" placeholder="Jhon Son" id="MessengerName" required>
                         <hr>
                         
-                        <label for="">Your Email</label>
-                        <input type="email" placeholder="Jhongoodboy@gmail.com" required>
+                        <label for="MessengerEmail">Your Email</label>
+                        <input type="email" placeholder="Jhongoodboy@gmail.com" id="MessengerEmail" required>
                         <hr>
                         
-                        <label for="">Subject</label>
-                        <input type="text" placeholder="Collaboration" required>
+                        <label for="MessageSubject">Subject</label>
+                        <input type="text" placeholder="Collaboration" id="MessageSubject" required>
                         <hr>
                         
-                        <label for="">Message</label>
-                        <textarea type="text" placeholder="Hai, How are you!"></textarea>
+                        <label for="MessageContent">Message</label>
+                        <textarea type="text" placeholder="Hai, How are you!" id="MessageContent" required></textarea>
                         <hr>
                         
-                        <button class="btn-submit" type="submit">Send Message</button>
+                        <button class="btn-submit" type="submit" id="btn-send">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -208,6 +213,7 @@
             <p class="w">widora - 2026</p>
         </footer>
 
+        <script src="assets/script/type-index.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </body>
 </html>
