@@ -7,6 +7,7 @@ const inputEmail = document.getElementById("MessengerEmail") as HTMLInputElement
 const inputSubject = document.getElementById("MessageSubject") as HTMLInputElement;
 const inputMessage = document.getElementById("MessageContent") as HTMLTextAreaElement;
 const btnSend = document.getElementById("btn-send") as HTMLButtonElement;
+const btnCv = document.getElementById("btn-cv") as HTMLButtonElement;
 
 interface ContactData {
     name: string;
@@ -39,4 +40,8 @@ form.addEventListener("input", () => {
 hamburger.addEventListener("click", () => {
     navOption.classList.toggle("active");
 });
-
+    
+btnCv.addEventListener("click", () => {
+    const cvUrl = "assets/file/mycv.pdf";
+    window.open(cvUrl, "_blank");
+});

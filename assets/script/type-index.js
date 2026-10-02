@@ -1,3 +1,4 @@
+"use strict";
 const hamburger = document.getElementById("hamburger");
 const navOption = document.getElementById("nav-option");
 const form = document.getElementById("MessageForm");
@@ -6,6 +7,7 @@ const inputEmail = document.getElementById("MessengerEmail");
 const inputSubject = document.getElementById("MessageSubject");
 const inputMessage = document.getElementById("MessageContent");
 const btnSend = document.getElementById("btn-send");
+const btnCv = document.getElementById("btn-cv");
 const saveData = localStorage.getItem("contactData");
 if (saveData) {
     const contact = JSON.parse(saveData);
@@ -25,5 +27,9 @@ form.addEventListener("input", () => {
 });
 hamburger.addEventListener("click", () => {
     navOption.classList.toggle("active");
+});
+btnCv.addEventListener("click", () => {
+    const cvUrl = "assets/file/mycv.pdf";
+    window.open(cvUrl, "_blank");
 });
 //# sourceMappingURL=type-index.js.map
